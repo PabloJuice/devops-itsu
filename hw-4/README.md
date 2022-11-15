@@ -11,7 +11,7 @@
 
 ## In order to  launch:
 1. vagrant up (or vagrant up --provision if already has vagrant dir)
-2. vagrant ssh pdvm
+2. vagrant ssh pdvmfour
 3. su - poweruser / adminuser
 4. cat /etc/group|grep adminuser
 5. sudo iptables -L

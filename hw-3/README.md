@@ -11,7 +11,7 @@
 
 ## In order to  launch:
 1. vagrant up (or vagrant up --provision if already has vagrant dir)
-2. vagrant ssh pdvm
+2. vagrant ssh pdvmthree
 3. sudo -i
 4. tail -f /var/log/sysinfo.log
 5. vagrant halt

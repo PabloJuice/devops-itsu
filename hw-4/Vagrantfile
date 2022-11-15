@@ -1,15 +1,15 @@
 Vagrant.configure("2") do |config|
 
-    config.vm.define "pdvm" do |pdvm|
+    config.vm.define "pdvmfour" do |pdvmfour|
 
-        pdvm.vm.hostname = "pdvm"
-        pdvm.vm.box = "ubuntu/focal64"
-        pdvm.vm.network "private_network", ip: "192.168.33.10"
-        pdvm.vm.network "forwarded_port", guest: 80, host: 8888
+        pdvmfour.vm.hostname = "pdvmfour"
+        pdvmfour.vm.box = "ubuntu/focal64"
+        pdvmfour.vm.network "private_network", ip: "192.168.33.10"
+        pdvmfour.vm.network "forwarded_port", guest: 80, host: 8889
 
 
-        pdvm.vm.provider "virtualbox" do |vb|
-            vb.name = "pdvm"
+        pdvmfour.vm.provider "virtualbox" do |vb|
+            vb.name = "pdvmfour"
             vb.gui = false
             vb.memory = "1024"
         end
