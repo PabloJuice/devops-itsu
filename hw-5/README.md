@@ -7,7 +7,7 @@
 
 ## In order to  launch:
 1. vagrant up (or vagrant up --provision if already has vagrant dir)
-2. vagrant ssh pdvmfour
+2. vagrant ssh pdvmfive
 3. cd folder1
 4. touch file123.txt
 5. cd ~

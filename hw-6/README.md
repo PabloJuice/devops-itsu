@@ -10,6 +10,6 @@
 
 ## In order to  launch:
 1. vagrant up (or vagrant up --provision if already has vagrant dir)
-2. vagrant ssh pdvmfour
+2. vagrant ssh pdvmsix
 3. df -h 
 4. lsblk
