@@ -1,0 +1,19 @@
+Vagrant.configure("2") do |config|
+
+    config.vm.define "pdvmfive" do |pdvmfive|
+
+        pdvmfive.vm.hostname = "pdvmfive"
+        pdvmfive.vm.box = "ubuntu/focal64"
+        pdvmfive.vm.network "private_network", ip: "192.168.33.10"
+        pdvmfive.vm.network "forwarded_port", guest: 80, host: 8888
+
+
+        pdvmfive.vm.provider "virtualbox" do |vb|
+            vb.name = "pdvmfive"
+            vb.gui = false
+            vb.memory = "1024"
+        end
+
+        config.vm.provision "shell", run: "always", path: "script.sh"
+    end
+end
