@@ -1,0 +1,13 @@
+[Unit]
+Description=Folder Sync Service
+After=network.target
+
+[Service]
+User=root
+ExecStart=/vagrant/folder-sync.sh
+RestartSec=5s
+Restart=on-failure
+User=vagrant
+
+[Install]
+WantedBy=multi-user.target
